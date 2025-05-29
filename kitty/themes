@@ -1,7 +1,9 @@
-background_opacity      0.8
-cursor_trail            10
+## name: Rosé Pine Moon
+## author: mvllow
+## license: MIT
+## upstream: https://github.com/rose-pine/kitty/blob/main/dist/rose-pine-moon.conf
+## blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 
-## Rose Piné Moon Colors
 foreground               #e0def4
 background               #232136
 selection_foreground     #e0def4
@@ -51,3 +53,4 @@ color14  #ea9a97
 # white
 color7   #e0def4
 color15  #e0def4
+

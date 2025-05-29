@@ -1,0 +1,48 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# web browser
+super + w
+    brave-browser
+
+# program launcher
+super + d
+	rofi -show drun
+# power menu
+super + p
+    ~/.config/rofi/scripts/powermenu.sh
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + q
+	bspc node -c
+
+super + {Left,Up,Down,Right}
+    bspc node -f {west,north,south,east}
+
+super + shift + {Left,Up,Down,Right}
+    bspc node -s {west,north,south,east}
+
+# Masaüstü geçişi (odak değiştir)
+super + {1,2,3,4,5}
+    bspc desktop -f ^{1,2,3,4,5}
+
+# Pencereyi belirli masaüstüne taşı
+super + shift + {1,2,3,4,5}
+    bspc node -d ^{1,2,3,4,5}
