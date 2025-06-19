@@ -35,11 +35,7 @@
             "key": "│ ├ Memory:",
             "keyColor": "green"
         },
-        {
-            "type": "disk",
-            "key": "└ └ Disk:",
-            "keyColor": "green"
-        },
+       
         {
             "type": "custom",
             "format": "\u001b[90m└────────────────────────────────────────────────────┘"
@@ -51,7 +47,7 @@
         },
         {
             "type": "os",
-            "key": " OS",
+            "key": " OS",
             "keyColor": "yellow"
         },
         {
@@ -83,19 +79,15 @@
         "break",
         {
             "type": "de",
-            "key": " DE:",
+            "key": "󰨇 DE:",
             "keyColor": "blue"
         },
-        {
-            "type": "lm",
-            "key": "│ ├ Display Manager:",
-            "keyColor": "blue"
-        },
-        {
+	{
             "type": "wm",
             "key": "│ ├ Window Manager:",
             "keyColor": "blue"
         },
+                
         {
             "type": "wmtheme",
             "key": "│ ├ WM Theme:",
@@ -116,11 +108,11 @@
 //            "type": "colors"
 //        },
 
-        {
-            "type": "colors",
-            "paddingLeft": 2,
-            "symbol": "circle"
-        }
+//        {
+//            "type": "colors",
+//            "paddingLeft": 2,
+//            "symbol": "circle"
+//        }
  
     ]
 }

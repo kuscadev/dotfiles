@@ -16,7 +16,8 @@ super + d
 
 # file browser
 super +f
-	pcmanfm
+	thunar
+
 # power menu
 super + p
     ~/.config/rofi/scripts/powermenu.sh
@@ -53,10 +54,18 @@ super + alt + {q,r}
 super + q
 	bspc node -c
 
+# Pencereler arası gezinme
 super + {Left,Up,Down,Right}
     bspc node -f {west,north,south,east}
 
+super + {h,j,k,l}
+    bspc node -f {west,north,south,east}
+
+# Pencere taşıma
 super + shift + {Left,Up,Down,Right}
+    bspc node -s {west,north,south,east}
+
+super + shift + {h,j,k,l}
     bspc node -s {west,north,south,east}
 
 # Masaüstü geçişi (odak değiştir)
@@ -66,3 +75,21 @@ super + {1,2,3,4,5}
 # Pencereyi belirli masaüstüne taşı
 super + shift + {1,2,3,4,5}
     bspc node -d ^{1,2,3,4,5}
+
+# Layout değiştirme
+super + shift + space
+    bspc desktop -l next
+
+# Floating/Tiled Değiştirme
+super + space
+    bspc node -t ~floating
+
+# Fullscreen
+super + shift + f
+    bspc node -t ~fullscreen
+
+# Monocle Layout Pencere Değiştirme
+Page_Up
+    bspc node -f next
+Page_Down
+    bspc node -f prev
