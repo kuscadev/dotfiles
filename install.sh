@@ -5,7 +5,7 @@ echo "🚀 Starting dotfiles installation..."
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 TARGET_DIR="$HOME/.config"
 
-DEBIAN_PACKAGES=("bspwm" "btop" "dunst" "fastfetch" "kitty" "picom" "polybar" "rofi" "sxhkd" "starship")
+DEBIAN_PACKAGES=("bspwm" "btop" "dunst" "fastfetch" "kitty" "picom" "polybar" "rofi" "sxhkd" "starship" "feh" "brightnessctl")
 
 FILES=("bspwm" "btop" "dunst" "fastfetch" "kitty" "picom" "polybar" "rofi" "sxhkd" "starship.toml")
 
