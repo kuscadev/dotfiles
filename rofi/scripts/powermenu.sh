@@ -5,6 +5,6 @@ chosen=$(echo -e "$options" | rofi -dmenu -theme ~/.config/rofi/themes/powermenu
 
 case "$chosen" in
     "󰍃 Logout") bspc quit ;;
-    "󰐥 Shutdown") systemctl shutdown ;;
+    "󰐥 Shutdown") systemctl poweroff ;;
     "󰑐 Reboot") systemctl reboot ;;
 esac
