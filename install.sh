@@ -21,6 +21,23 @@ else
     echo "⚠️ This is not a Debian-based system. Skipping package installation."
 fi
 
+echo "🔤 Installing Hack Nerd Font..."
+
+FONT_DIR="$HOME/.local/share/fonts"
+mkdir -p "$FONT_DIR"
+
+HACK_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip"
+TEMP_ZIP="/tmp/Hack.zip"
+
+curl -L "$HACK_URL" -o "$TEMP_ZIP"
+unzip -o "$TEMP_ZIP" -d "$FONT_DIR"
+rm "$TEMP_ZIP"
+
+echo "🗂️ Refreshing font cache..."
+fc-cache -fv
+
+echo "✅ Hack Nerd Font installed successfully!"
+
 for file in "${FILES[@]}"; do
     src="$DOTFILES_DIR/$file"
     dest="$TARGET_DIR/$file"
