@@ -1,3 +1,6 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
 * {
     font:   "Roboto 12";
 
@@ -90,4 +93,3 @@ element-icon {
 element-text {
     text-color: inherit;
 }
-

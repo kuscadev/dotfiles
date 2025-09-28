@@ -8,19 +8,21 @@ super + Return
 
 # web browser
 super + w
-    firefox
+    zen
 
 # program launcher
 super + d
 	rofi -show drun
-
+#file search
+super + shift + f
+	rofi -show filebrowser
 # file browser
 super +f
 	thunar
 
 # power menu
 super + p
-    ~/.config/rofi/scripts/powermenu.sh
+    ~/.config/rofi/scripts/powermenu_t5
 
 # make sxhkd reload its configuration files:
 super + Escape

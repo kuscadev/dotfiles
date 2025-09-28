@@ -10,13 +10,14 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
-bspc config normal_border_color "#8ec07c"
-bspc config focused_border_color "#cc241d"
+bspc config normal_border_color "#03045e"
+bspc config focused_border_color "#0096c7"
 
 bspc desktop -f ^3
 
 bspc rule -a Brave-Browser desktop=^1 follow=on state=tiled
-bspc rule -a firefox-esr desktop=^1 follow=on state=tiled
+bspc rule -a zen desktop=^1 follow=on state=tiled
+bspc rule -a firefox desktop=^1 follow=on state=tiled
 bspc rule -a kitty desktop=^2 follow=on state=tiled
 bspc rule -a Code desktop=^4 follow=on state=tiled
 bspc rule -a Sublime_text desktop=^4 follow=on state=tiled
@@ -25,8 +26,8 @@ bspc rule -a Capacities desktop=^5 follow=on state=tiled
 bspc rule -a obsidian desktop=^5 follow=on state=tiled
 bspc rule -a Thunar desktop=^3 follow=on state=tiled
 
-feh --bg-scale /home/oguzhan/Pictures/Wallpapers/portal.png &
+feh --bg-scale /home/oguzhan/.config/wallpapers/16.jpg &
 polybar main &
 picom --config ~/.config/picom/picom.conf &
-
+~/.config/bspwm/autostart.sh
 xset s off -dpms s noblank &
