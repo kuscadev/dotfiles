@@ -180,4 +180,8 @@ configuration {
 */
 }
 
+//@theme "/home/oguzhan/.config/rofi/themes/rounded-blue-dark.rasi"
+//@theme "/home/oguzhan/.config/rofi/themes/launchpad.rasi"
+//@theme "/home/oguzhan/.config/rofi/themes/simple-tokyonight.rasi"
+//@theme "/usr/share/rofi/themes/sidebar-v2.rasi"
 @theme "/home/oguzhan/.config/rofi/themes/rounded-blue-dark.rasi"

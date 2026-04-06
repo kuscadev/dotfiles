@@ -39,23 +39,21 @@ The script will:
 
 | Color | Hex |
 | --- | --- |
-| Green | #8ec07c|
-| Blue | #458588 |
-| Yellow | #d79921 |
-| Red | #cc241d |
-| Background| #3c3836 |
-| Foreground | #e0def4 |
+| Background | #212121|
+| Background-Alt | #2A2A2A |
+| Primary | #1A73E8 |
+| Text | #E6E6E6 |
+| Disabled| #969696 |
 
 ### Theme & Fonts
 
-- **GTK Theme:** [Gruvbox GTK Theme](https://www.gnome-look.org/p/1681313)
-- **Icons:** [Gruvbox Plus Icon Pack](https://www.gnome-look.org/p/1961046)
+- **GTK Theme:** [Tokyonight Dark Storm](https://www.gnome-look.org/p/1681315/)
+- **Icons:** [Fluent Dark](https://www.gnome-look.org/p/1477945)
 - **Font:** [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip)
 ## Screenshots
 
-![Wallpaper](/Screenshots/Screenshot%202025-08-22%2015:05:36.png)
-![Terminal](/Screenshots/Screenshot%202025-08-22%2015:07:39.png)
-![Firefox](/Screenshots/Screenshot%202025-08-22%2015:10:30.png)
+![Wallpaper](/Screenshots/debian-bspwm-wallpaper.png)
+![Firefox](/Screenshots/debian-bspwm)
 
 ## Notes
 - These dotfiles are optimized for my workflow, so you may want to adjust keybindings and scripts.
