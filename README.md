@@ -53,7 +53,7 @@ The script will:
 ## Screenshots
 
 ![Wallpaper](/Screenshots/debian-bspwm-wallpaper.png)
-![Firefox](/Screenshots/debian-bspwm)
+![Firefox](/Screenshots/debian-bspwm.png)
 
 ## Notes
 - These dotfiles are optimized for my workflow, so you may want to adjust keybindings and scripts.
