@@ -1,118 +1,68 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "builtin",
-        "height": 15,
-        "width": 15,
-        "padding": {
-            "top": 2,
-            "left": 2
-        }
+        "source": "~/.local/share/fastfetch/images/fedora.png",
+    	"type": "kitty",
+      	"height": 7,
+      	"padding": {
+    		"top": 3
+      	}
+    },
+    "display": {
+        "separator": " "
     },
     "modules": [
+	"break",
+	"break",
+//	{
+//            "type": "title",
+//            "keyWidth": 10
+//        },
         "break",
-        {
-            "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
-        },
-        {
-            "type": "host",
-            "key": " PC",
-            "keyColor": "green"
-        },
-        {
-            "type": "cpu",
-            "key": "│ ├ CPU",
-            "keyColor": "green"
-        },
-        {
-            "type": "gpu",
-            "key": "│ ├ GPU",
-            "keyColor": "green"
-        },
-        {
-            "type": "memory",
-            "key": "│ ├ Memory",
-            "keyColor": "green"
-        },
-       
-        {
-            "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
-        },
         {
             "type": "os",
-            "key": " OS",
-            "keyColor": "yellow"
+            "key": " ",
+            "keyColor": "33"
         },
         {
             "type": "kernel",
-            "key": "│ ├ Kernel",
-            "keyColor": "yellow"
+            "key": " ",
+            "keyColor": "33"
         },
         {
             "type": "packages",
-            "key": "│ ├ Packages",
-            "keyColor": "yellow"
+            "format": "{} (rpm)",
+            "key": " ",
+            "keyColor": "33"
         },
         {
             "type": "shell",
-            "key": "│ ├ Shell",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "command",
-            "key": "│ ├ OS Age",
-            "keyColor": "yellow",
-            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
-        },
-        {
-            "type": "uptime",
-            "key": "│ └ Uptime",
-            "keyColor": "yellow"
-        },
-        "break",
-        {
-            "type": "de",
-            "key": "󰨇 DE",
-            "keyColor": "blue"
-        },
-	{
-            "type": "wm",
-            "key": "│ ├ Window Manager",
-            "keyColor": "blue"
-        },
-                
-        {
-            "type": "wmtheme",
-            "key": "│ ├ WM Theme",
-            "keyColor": "blue"
+            "key": " ",
+            "keyColor": "33"
         },
         {
             "type": "terminal",
-            "key": "└ └ Terminal",
-            "keyColor": "blue"
+            "key": " ",
+            "keyColor": "33"
         },
         {
-            "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+            "type": "wm",
+            "key": " ",
+            "keyColor": "33"
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "33"
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "33"
         },
         "break",
-
-//        {
-//            "type": "colors"
-//        },
-
-//        {
-//            "type": "colors",
-//            "paddingLeft": 2,
-//            "symbol": "circle"
-//        }
- 
+//        "colors",
+    "break",
+    "break"
     ]
 }
